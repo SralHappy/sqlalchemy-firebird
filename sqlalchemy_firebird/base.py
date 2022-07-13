@@ -653,7 +653,7 @@ class FBExecutionContext(default.DefaultExecutionContext):
 class FBDialect(default.DefaultDialect):
     """Firebird dialect"""
 
-    name = "firebird"
+    name = "firebird-new"
 
     """
         Firebird version 4.0 and greater have a maximum identifier length of
