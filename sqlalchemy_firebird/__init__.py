@@ -25,11 +25,11 @@ from . import provision  # noqa
 # Not supporting kinterbase
 # from . import kinterbasdb  # noqa
 
-__version__ = "0.7.5"
+__version__ = "0.7.5b"
 
 base.dialect = dialect = fdb.dialect
 
-_registry.register("firebird", "sqlalchemy_firebird.fdb", "FBDialect_fdb")
+_registry.register("firebird-new", "sqlalchemy_firebird.fdb", "FBDialect_fdb")
 
 __all__ = (
     "SMALLINT",
