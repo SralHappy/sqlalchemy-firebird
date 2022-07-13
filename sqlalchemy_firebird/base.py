@@ -705,7 +705,7 @@ class FBDialect(default.DefaultDialect):
     def initialize(self, connection):
         super(FBDialect, self).initialize(connection)
         self._version_two = (
-            "firebird" in self.server_version_info
+            "firebird-new" in self.server_version_info
             and self.server_version_info >= (2,)
         ) or (
             "interbase" in self.server_version_info
