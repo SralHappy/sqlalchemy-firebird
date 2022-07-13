@@ -51,7 +51,7 @@ setup(
     zip_safe=False,
     entry_points={
         "sqlalchemy.dialects": [
-            "firebird = sqlalchemy_firebird.fdb:FBDialect_fdb",
+            "firebird-new = sqlalchemy_firebird.fdb:FBDialect_fdb",
         ]
     },
 )
